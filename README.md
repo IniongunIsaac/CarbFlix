@@ -1,5 +1,5 @@
 # CarbFlix
-An iOS application that displays Batman Movies. A really fun way to look at Netflix  🔥 
+An iOS application that displays Batman Movies (retreived from http://www.omdbapi.com/). A really fun way to look at Netflix  🔥.
 The app has the following features:
 
 ##### Movies:
