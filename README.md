@@ -42,5 +42,9 @@ The app was built using the following third parties:
 * Build and run the project on the XCode Simulator or any physically connected iOS device.
 
 ### Screenshots
-<img src="https://github.com/IniongunIsaac/CarbFlix/blob/monolith/Buy%20Ticket/Screenshots/onboarding_auth.png" width="400" height="750" alt="Onboarding Authentication">     <img src="https://github.com/IniongunIsaac/Buy-Ticket/blob/monolith/Buy%20Ticket/Screenshots/onboarding_route.png" width="400" height="750" alt="Onboarding Route">
+<img src="https://github.com/IniongunIsaac/CarbFlix/blob/main/CarbFlix/Screenshots/movies.png" width="400" height="750" alt="Movies">     <img src="https://github.com/IniongunIsaac/CarbFlix/blob/main/CarbFlix/Screenshots/movie_details.png" width="400" height="750" alt="Movie Details">
+
+<img src="https://github.com/IniongunIsaac/CarbFlix/blob/main/CarbFlix/Screenshots/empty_search_state.png" width="400" height="750" alt="Empty Search State">     <img src="https://github.com/IniongunIsaac/CarbFlix/blob/main/CarbFlix/Screenshots/search_results.png" width="400" height="750" alt="Search Results">
+
+<img src="https://github.com/IniongunIsaac/CarbFlix/blob/main/CarbFlix/Screenshots/favorites.png" width="400" height="750" alt="Favorites">
 
