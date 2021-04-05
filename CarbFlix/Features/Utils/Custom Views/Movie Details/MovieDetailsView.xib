@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailsView" customModule="CarbFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="cOq-km-5zV"/>
+                <outlet property="detailsView" destination="myC-f6-DWr" id="2Cq-zK-aXt"/>
+                <outlet property="directorLabel" destination="xRQ-f7-k5U" id="uDV-Mb-Fif"/>
+                <outlet property="posterImageView" destination="Fxt-7B-jUx" id="bpE-4L-yOd"/>
+                <outlet property="titleLabel" destination="YPz-xU-yHr" id="5Ns-fE-PWu"/>
+                <outlet property="yearLabel" destination="T5c-lN-TBP" id="smH-mt-bHW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="324"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myC-f6-DWr">
+                    <rect key="frame" x="0.0" y="0.0" width="252" height="324"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_poster" translatesAutoresizingMaskIntoConstraints="NO" id="Fxt-7B-jUx">
+                            <rect key="frame" x="0.0" y="0.0" width="252" height="261"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="261" id="ab3-tN-qe4"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-P9-Gt4">
+                            <rect key="frame" x="8" y="268.5" width="236" height="47.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman: The Killing Joke Batman: The Killing Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-xU-yHr">
+                                    <rect key="frame" x="0.0" y="0.0" width="236" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hVJ-P3-YT8">
+                                    <rect key="frame" x="0.0" y="29.5" width="236" height="18"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sam Liu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRQ-f7-k5U">
+                                            <rect key="frame" x="0.0" y="0.0" width="192.5" height="18"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5c-lN-TBP">
+                                            <rect key="frame" x="202.5" y="0.0" width="33.5" height="18"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="gl4-P9-Gt4" firstAttribute="leading" secondItem="myC-f6-DWr" secondAttribute="leading" constant="8" id="1MZ-20-XXS"/>
+                        <constraint firstItem="gl4-P9-Gt4" firstAttribute="top" secondItem="Fxt-7B-jUx" secondAttribute="bottom" constant="7.5" id="9Fr-S9-mHs"/>
+                        <constraint firstAttribute="trailing" secondItem="Fxt-7B-jUx" secondAttribute="trailing" id="KSA-h4-Nfk"/>
+                        <constraint firstItem="Fxt-7B-jUx" firstAttribute="top" secondItem="myC-f6-DWr" secondAttribute="top" id="VfL-n5-vD5"/>
+                        <constraint firstAttribute="trailing" secondItem="gl4-P9-Gt4" secondAttribute="trailing" constant="8" id="YEh-gl-mki"/>
+                        <constraint firstAttribute="bottom" secondItem="gl4-P9-Gt4" secondAttribute="bottom" constant="8" id="gKr-1W-ct2"/>
+                        <constraint firstItem="Fxt-7B-jUx" firstAttribute="leading" secondItem="myC-f6-DWr" secondAttribute="leading" id="jjR-VW-n04"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" systemColor="systemFillColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="myC-f6-DWr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5wU-to-vun"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="myC-f6-DWr" secondAttribute="bottom" id="cTP-P8-QdV"/>
+                <constraint firstItem="myC-f6-DWr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dpe-gP-mki"/>
+                <constraint firstAttribute="trailing" secondItem="myC-f6-DWr" secondAttribute="trailing" id="fBT-qE-u3T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-94.20289855072464" y="-86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder_poster" width="512" height="322"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
